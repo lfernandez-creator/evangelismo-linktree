@@ -38,24 +38,22 @@
             width: 100%;
             padding: 20px;
             text-align: center;
-            flex-grow: 1;
         }
 
         .logo {
-            width: 250px;
+            width: 200px;
             height: auto;
             opacity: 0;
             transform: translateY(-50px);
             animation: fadeDown 0.8s ease forwards;
         }
 
-        /* Nuevo estilo para los horarios */
         .schedule-box {
             background: rgba(0, 0, 0, 0.2);
-            border: 1px dashed rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 15px;
             padding: 15px;
-            margin: 40px 25px;
+            margin: 40px 0px;
             opacity: 0;
             animation: fadeIn 1s ease forwards;
             animation-delay: 0.5s;
@@ -82,10 +80,11 @@
         }
 
         .link-card {
+            width: 100%;
             background: var(--card-bg);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
+            border-radius: 15px;
             padding: 18px;
             margin-bottom: 16px;
             display: flex;
@@ -107,18 +106,18 @@
         }
 
         .address-link {
-                display: block;
-                font-size: 0.85rem;
-                margin-top: 10px;
-                padding-top: 10px;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
-                color: #cbd5e1;
-                text-decoration: none; /* Quitamos el subrayado por defecto */
-                transition: 0.3s;
-            }
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #cbd5e1;
+            text-decoration: none; 
+            transition: 0.3s;
+        }
 
         .address-link:hover {
-            color: var(--accent-color); /* Cambia al color celeste al pasar el mouse */
+            color: var(--accent-color);
             transform: translateY(-2px);
         }
 
@@ -134,7 +133,6 @@
             width: 100%;
             margin-top: auto;
         }
-        /* Ajuste de delays para que todo fluya con el nuevo div */
         .link-card:nth-of-type(1) { animation: fadeUp 0.5s ease forwards; animation-delay: 0.8s; }
         .link-card:nth-of-type(2) { animation: fadeUp 0.5s ease forwards; animation-delay: 1.0s; }
         .link-card:nth-of-type(3) { animation: fadeUp 0.5s ease forwards; animation-delay: 1.2s; }
@@ -157,36 +155,34 @@
         <p class="schedule-item"><strong>Miércoles:</strong> 7:30 PM</p>
 
         <div class="address-text">
-            <a href="https://maps.google.com/?q=TU+DIRECCION+AQUI" target="_blank" class="address-link">
+            <a href="https://maps.app.goo.gl/CCDEfL31e3d45HpX9" target="_blank" class="address-link">
                 <i class="bi bi-geo-alt-fill"></i> 
-                Av. Principal 123, Ciudad, País
+                Arturo Dagnino 232, San Bernardo
                 <br>
                 <small style="opacity: 0.7;">(Toca aquí para ver en el mapa)</small>
             </a> 
         </div>
     </div>
 
-    <a href="#" class="link-card">
+    <a href="https://wa.me/56999014481?text=Hola%20quisiera%20más%20información"  target="_blank" class="link-card">
         <i class="bi bi-whatsapp"></i>
-        <span>Comunícate con nosotros</span>
+        <span>Escríbenos por WhatsApp</span>
     </a>
 
-    <a href="#" class="link-card">
+    <a href="https://www.instagram.com/ccint_sanbernardo/" target="_blank" class="link-card">
         <i class="bi bi-instagram"></i>
-        <span>Revisa nuestras historias</span>
+        <span>Ver historias</span>
     </a>
 
-    <a href="#" class="link-card">
-        <i class="bi bi-tiktok"></i>
-        <span>Síguenos en TikTok</span>
-    </a>
-
-    <a href="#" class="link-card">
+    <a href="https://www.facebook.com/people/CCINT-Nuevos-Comienzos-San-Bernardo/61565410760803/" target="_blank" class="link-card">
         <i class="bi bi-facebook"></i>
-        <span>Visita nuestro Facebook</span>
+        <span>Ver en Facebook</span>
     </a>
-
     
+    <a href="https://www.youtube.com/@ccintsanbernardo/streams/" target="_blank" class="link-card">
+        <i class="bi bi-youtube"></i>
+        <span>Ver predicaciones</span>
+    </a>
 </div>
 <footer>
         <p>© <span id="current-year"></span> CCINT San Bernardo. Todos los derechos reservados.</p>
